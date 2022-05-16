@@ -565,6 +565,7 @@ PhotoViewScaleState defaultScaleStateCycle(PhotoViewScaleState actual) {
     case PhotoViewScaleState.originalSize:
       return PhotoViewScaleState.initial;
     case PhotoViewScaleState.zoomedIn:
+    case PhotoViewScaleState.tapZoom:
     case PhotoViewScaleState.zoomedOut:
       return PhotoViewScaleState.initial;
     default:
